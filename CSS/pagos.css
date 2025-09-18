@@ -1,0 +1,103 @@
+.pagos {
+display: flex;
+margin-left: 40px;
+margin-bottom: 55px;
+margin-top: 50px;
+justify-content: center;
+}
+
+.pagos__formulario {
+background: white;
+border-radius: 12px;
+padding: 25px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 2.5);
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+font-size: 22px;
+}
+.pagos__botones {
+display: flex;
+align-items: baseline;
+justify-content: center;
+gap: 21%;
+}
+
+.pagos__botones button {
+min-width: 140px;
+padding: 12px 28px;
+font-size: 1.1rem;
+font-family: inherit;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+transition: background 0.2s, transform 0.2s;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+margin: 0 8px;
+}
+
+.pagos__botones button[type="submit"] {
+background: var(--color-primario);
+color: #fff;
+}
+
+.pagos__botones button[type="submit"]:hover {
+background: var(--color-secundario);
+transform: scale(1.05);
+}
+
+.pagos__botones button[type="button"] {
+background: var(--color-secundario);
+color: #fff;
+}
+
+.pagos__botones button[type="button"]:hover {
+background: var(--color-primario);
+transform: scale(1.05);
+}
+
+.pagos__input {
+padding: 10px 15px;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 89%;
+transition: border-color 0.3s;
+
+}
+.pagos__input:focus {
+border-color: var(--color-primario);
+outline: none;
+}
+
+.pagos__confirmacion {
+display: none;
+text-align: center;
+padding: 10px 20px;
+background: blanchedalmond;
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+margin-bottom: 20px;
+}
+.pagos__botones-inicio {
+background: var(--color-primario);
+color: #fff;
+min-width: 140px;
+padding: 12px 28px;
+font-size: 1.1rem;
+font-family: inherit;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+transition: background 0.2s, transform 0.2s;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+margin-top: 20px;
+}
+.pagos__botones-inicio:hover {
+background: var(--color-secundario);
+transform: scale(1.05);
+}

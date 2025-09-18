@@ -1,0 +1,21 @@
+.lista-productos
+    {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0;
+    }
+.lista-productos__filtro {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lista-productos__filtro select {
+    padding: 10px;
+    color: var(--color-primario);
+    font-family: josefin sans, sans-serif;
+    font-size: 1rem;
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+    background-color: var(--color-primario) opacity 0.8;
+}

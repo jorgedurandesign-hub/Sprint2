@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/Imagenes/Logo/ClickNow.ico">
+  <link rel="stylesheet" href="../CSS/Style.css"/>
+  <link rel="stylesheet" href="../CSS/footer.css"/>
+    <link rel="stylesheet" href="../CSS/pagos.css"/>
+
+  <title>ClickNow</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html" class="navbar__link" target="_inicio">
+          <img src="../assets/Imagenes/Logo/ClickNow.png" alt="Logo ClickNow" width="200" height="auto" style="margin-right: 830px;">
+        </a>
+      </div>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="../HTML/index.html" class="navbar__link" target="_inicio">Inicio</a></li>
+            <li class="navbar__item"><a href="../HTML/productos.html" class="navbar__link" target="_productos">Productos</a></li>
+            <li class="navbar__item"><a href="../HTML/contacto.html" class="navbar__link" target="_contacto">Contacto</a></li>
+            <li class="navbar__item_carrito"><a href="../HTML/carrito.html" class="navbar__link" target="_carrito">🛒</a></li>
+            <li class="navbar__item_registro"><a href="../HTML/registro.html" class="navbar__link" target="_registro">👥</a></li>
+        </ul>
+    </nav>
+  </header>
+
+<section class="pagos">
+    <div class="pagos__formulario">
+        <h2>INFORMACIÓN DE PAGOS</h2>
+        <form>
+            <div>
+                <label>Nombre de la Tarjeta:</label>
+                <input type="text" id="nombre" name="nombre"required>
+            </div>
+            <div>
+                <label>Número de la Tarjeta:</label>
+                <input type="text" id="numero" name="numero" maxlength="19" required>
+            </div>
+            <div>
+                <label>Fecha de Expiración:</label>
+                <input type="text" id="fecha-expiracion" maxlength="5" name="fecha-expiracion" required>
+            </div>
+            <div>
+                <label>Código de Seguridad (CVV):</label>
+                <input type="text" id="codigo-seguridad" maxlength="3" name="codigo-seguridad" required>
+            </div>
+            <div  class="pagos__botones">
+                <button type="submit" id="pagos__boton">Pagar</button>
+                <button type="button" onclick="window.location.href = '../HTML/carrito.html'">Volver al Carrito</button>
+            </div>
+        </form>
+
+        <div class="pagos__confirmacion" id="pagos__confirmacion">
+                <h2>¡Gracias por tu compra!</h2>
+                <p>Tu pago ha sido realizado con éxito.</p>
+                <p id="pago__orden"></p>
+                <button class="pagos__botones-inicio" type="button" onclick="window.location.href='index.html'">Volver al inicio</button>
+        </div>
+</section>
+
+   <footer>
+    <div class="footer__content">
+      <p>&copy; 2025 ClickNow. Todos los derechos reservados.</p>
+      <p>Proyecto realizado con: <strong>HTML, CSS y JavaScript</strong></p>
+       <div class="footer__links">
+        <a href="../HTML/index.html" class="footer__link">Inicio</a>|
+        <a href="../HTML/productos.html" class="footer__link">Productos</a>|
+        <a href="../HTML/carrito.html" class="footer__link">Carrito</a>|
+        <a href="../HTML/contacto.html" class="footer__link">Contacto</a>
+       </div>
+     <p>Repositorio: <a href="https://github.com/tu-repositorio" target="_blank">GitHub</a></p>
+    </div>
+    <div class="footer__copy"></div>
+  </footer>
+
+  <script src="../JS/pagos.js"></script>
+
+</body>
+</html>

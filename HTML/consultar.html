@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/Imagenes/Logo/ClickNow.ico">
+  <link rel="stylesheet" href="../CSS/Style.css"/>
+  <link rel="stylesheet" href="../CSS/banner.css"/>
+  <link rel="stylesheet" href="../CSS/destacados.css"/>
+  <link rel="stylesheet" href="../CSS/footer.css"/>
+  <title>ClickNow</title>
+</head>
+<body>
+  <header>
+     <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html" class="navbar__link" target="_inicio">
+          <img src="../assets/Imagenes/Logo/ClickNow.png" alt="Logo ClickNow" width="200" height="auto" style="margin-right: 830px;">
+        </a>
+      </div>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="../HTML/index.html" class="navbar__link" target="_inicio">Inicio</a></li>
+            <li class="navbar__item"><a href="../HTML/productos.html" class="navbar__link" target="_productos">Productos</a></li>
+            <li class="navbar__item"><a href="../HTML/contacto.html" class="navbar__link" target="_contacto">Contacto</a></li>
+            <li class="navbar__item_carrito"><a href="../HTML/carrito.html" class="navbar__link" target="_carrito">Carrito</a></li>
+            <li id="registro"><a href="../HTML/registro.html" class="header__nav-link tooltip" data-tooltip="Registrarse">Registrarse</a></li>
+            <li id="login"><a href="../HTML/login.html" class="header__nav-link tooltip" data-tooltip="Login">Login</a></li>
+            <li id="admin"><a href="../HTML/admin.html" class="header__nav-link tooltip" data-tooltip="Admin">Admin</a></li>
+            <li id="cerrar-sesion"><a href="" class="header__nav-link tooltip" data-tooltip="Cerrar Sesión">Cerrar Sesión</a></li>
+        </ul>
+            <button class="header__nav-toggle" aria-label="Abrir menu">
+            &#9776;
+            </button>
+    </nav>
+    </header>
+
+        <section class="ordenes">
+
+            <div>
+                <h2 class="ordenes__title">Consulta tu Orden</h2>
+                <form id="ordenes__form">
+                    <label for="ordenId">Número de Orden:</label>
+                    <input type="text" id="ordenId" name="ordenId" required>
+                    <button type="submit">Consultar</button>
+                </form>
+                <div id="ordenes__resultado"></div>
+            </div>
+            
+        </section>
+
+    <footer class="footer">
+    <div class="footer__content">
+      <p>&copy; 2025 ClickNow. Todos los derechos reservados.</p>
+      <p>Proyecto realizado con: <strong>HTML, CSS y JavaScript</strong></p>
+      <div class="footer__links">
+        <a href="../HTML/index.html" class="footer__link">Inicio</a>|
+        <a href="../HTML/productos.html" class="footer__link">Productos</a>|
+        <a href="../HTML/carrito.html" class="footer__link">Carrito</a>|
+        <a href="../HTML/contacto.html" class="footer__link">Contacto</a>
+      </div>
+        <p>Repositorio: <a href="https://github.com/tu-repositorio" target="_blank">GitHub</a></p>
+        <a href="assets/docs/provacidad.pdf" target="_blank" class="contacto-mapa-link tooltip" data-tooltip="Política de privacidad">Política de privacidad</a>
+        <a href="assets/docs/datos.pdf" target="_blank" class="contacto-mapa-link tooltip" data-tooltip="Tratamiento de datos">Tratamiento de datos</a>
+      </div>
+    <div class="footer__copy">
+    </div>
+  </footer>
+  <script src="../JS/menu.js"></script>
+  <script src="../JS/productos.js"></script>
+  <script src="../JS/consultar.js"></script>
+</body>
+</html>

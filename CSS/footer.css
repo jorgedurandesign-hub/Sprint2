@@ -1,0 +1,27 @@
+footer {
+background: linear-gradient(to right, #701acc, #c37c12);
+color: #fff;
+font-size: 1.5rem;
+text-align: center;
+padding: 30px 30px;
+margin-top: 40px;
+box-shadow: 0 2px 8px #333;
+
+}
+.footer__content {
+margin: 8px 0;
+line-height: 1.5;
+}
+.footer__links {
+margin: 12px 0;
+}
+.footer__links a {
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s;
+padding: 0 5px;
+}
+.footer__links a:hover {
+text-decoration: underline;
+}

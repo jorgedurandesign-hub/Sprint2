@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/Imagenes/Logo/ClickNow.ico">
+  <link rel="stylesheet" href="../CSS/Style.css"/>
+  <link rel="stylesheet" href="../CSS/banner.css"/>
+  <link rel="stylesheet" href="../CSS/destacados.css"/>
+  <link rel="stylesheet" href="../CSS/footer.css"/>
+  <title>ClickNow</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="index.html" class="navbar__link" target="_inicio">
+          <img src="../assets/Imagenes/Logo/ClickNow.png" alt="Logo ClickNow" width="200" height="auto" style="margin-right: 830px;">
+        </a>
+      </div>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="../HTML/index.html" class="navbar__link">Inicio</a></li>
+            <li class="navbar__item"><a href="../HTML/productos.html" class="navbar__link">Productos</a></li>
+            <li class="navbar__item_carrito"><a href="../HTML/carrito.html" class="navbar__link" target="_carrito">Carrito</a></li>
+            <li class="navbar__item"><a href="../HTML/contacto.html" class="navbar__link">Contacto</a></li>
+            <li id="registro"><a href="../HTML/registro.html" class="header__nav-link tooltip" data-tooltip="Registrarse">Registrarse</a></li>
+            <li id="login"><a href="../HTML/login.html" class="header__nav-link tooltip" data-tooltip="Login">Login</a></li>
+            <li id="admin"><a href="../HTML/admin.html" class="header__nav-link tooltip" data-tooltip="Admin">Admin</a></li>
+            <li id="cerrar-sesion"><a href="" class="header__nav-link tooltip" data-tooltip="Cerrar Sesión">Cerrar Sesión</a></li>
+        </ul>
+            <button class="header__nav-toggle" aria-label="Abrir menu">
+            &#9776;
+            </button>
+    </nav>
+    <section class="banner">
+            <div class="banner__carousel">
+                <img src="../assets/Imagenes/Banner/banner accesorios.jpg" alt="Accesorios" class="banner__imagen banner__imagen--active">
+                <img src="../assets/Imagenes/Banner/banner hogar.jpg" alt="Hogar" class="banner__imagen">
+                <img src="../assets/Imagenes/Banner/banner moda.jpg" alt="Moda" class="banner__imagen">
+                <img src="../assets/Imagenes/Banner/banner salud.jpg" alt="Salud" class="banner__imagen">
+                <img src="../assets/Imagenes/Banner/banner tech.jpg" alt="Tecnología" class="banner__imagen">
+                <button class="banner__boton banner__boton--prev"> < </button>
+                <button class="banner__boton banner__boton--next"> > </button>
+            </div>
+            <div class="banner__content">
+                <h1 class="banner__title">¡Nuevas ofertas exclusivas!</h1>
+                <a href="productos.html" class="banner__button">Ver Ofertas</a>
+            </div>
+    </section>
+  </header>
+
+      <section class="destacados">
+
+        <h2 class="destacados__title"> Productos Destacados</h2>
+        <div class="destacados__grid">
+
+        </div>
+        <div class="mensaje" id="mensaje"></div>
+      </section>
+
+  <style>
+
+  </style>
+
+       <footer class="footer">
+    <div class="footer__content">
+      <p>&copy; 2025 ClickNow. Todos los derechos reservados.</p>
+      <p>Proyecto realizado con: <strong>HTML, CSS y JavaScript</strong></p>
+      <div class="footer__links">
+        <a href="../HTML/index.html" class="footer__link">Inicio</a>|
+        <a href="../HTML/productos.html" class="footer__link">Productos</a>|
+        <a href="../HTML/carrito.html" class="footer__link">Carrito</a>|
+        <a href="../HTML/contacto.html" class="footer__link">Contacto</a>
+      </div>
+        <p>Repositorio: <a href="https://github.com/tu-repositorio" target="_blank">GitHub</a></p>
+        <a href="assets/docs/provacidad.pdf" target="_blank" class="contacto-mapa-link tooltip" data-tooltip="Política de privacidad">Política de privacidad</a>
+        <a href="assets/docs/datos.pdf" target="_blank" class="contacto-mapa-link tooltip" data-tooltip="Tratamiento de datos">Tratamiento de datos</a>
+      </div>
+    <div class="footer__copy">
+    </div>
+   </footer>
+   
+  <script src="../JS/menu.js"></script>
+  <script src="../JS/banner.js"></script>
+  <script src="../JS/productos.js"></script>
+  <script src="../JS/carrito.js"></script>
+  <script src="../JS/destacados.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+  --color-primario: rgb(243, 151, 13);
+  --color-secundario: #711bcb;
+  --color-fondo: #ffffff;
+  --espacio-base: 1rem;
+  --font-size: 2rem;
+  --color-error: red;
+  --color-success: green; 
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  background: linear-gradient(to right, #701acc, #c37c12);
+  box-shadow: 0 2px 8px #333;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+
+.navbar__item_registro, .navbar__item_carrito {
+  margin: 0 calc(var(--espacio-base) / 2);
+  font-size: var(--font-size);
+}
+
+.navbar__item, .navbar__link, .header__nav-link {
+  margin: 0 calc(var(--espacio-base) / 2);
+  font-size: var(--font-size);
+  color: #f0f0f0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar__link:hover, .header__nav-link:hover {
+ color: #ceb603;
+  transform: scale(1.05);
+}
+
+.contenedor {
+  display: grid;
+  text-align: justify;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--espacio-base);
+  padding: var(--espacio-base);
+}
+
+.descripcion {
+  text-align: justify;
+  color: var(--color-secundario);
+}
+
+.boton {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  font-family: josefin sans, sans-serif;
+  font-size: 1rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  width: 100%;
+  min-height: 2.5rem;
+  margin-top: auto;
+}
+
+.boton:hover {
+    background-color: var(--color-secundario);
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header {
+    background-color: var(--background-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 3px 8px #333;
+    position: relative;
+}
+.header__logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-toggle{
+    display: none;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+.active {
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+@media (max-width: 590px) {
+
+
+    .header__nav-toggle{
+        display: block;
+    }
+
+    .header__nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: antiquewhite;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+
+    .header__nav-list.active {
+        display: flex;
+
+    }
+}
