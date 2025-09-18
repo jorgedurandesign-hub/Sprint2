@@ -11,13 +11,21 @@ let itemsCarrito = document.querySelector(".carrito__productos");
                 itemsCarrito.innerHTML="";
                 carrito.forEach((producto, index) => {
                     suma += producto.precio * producto.cantidad;
-                    itemsCarrito.innerHTML += `
+
+            const formatoMoneda = new Intl.NumberFormat('es-CO', {
+                style: 'currency', 
+                currency: 'COP',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            });
+
+                    return itemsCarrito.innerHTML += `
                         <div class="carrito__item">
                             <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito__item-imagen">
                             <div class="carrito__item-info">
                                 <span>${producto.nombre}</span>
-                                <span>$${producto.precio}</span>
-                                <span>Total: $${(producto.precio * producto.cantidad).toFixed(2)}</span>
+                                <span>${formatoMoneda.format(producto.precio)}</span>
+                                <span>Total: ${formatoMoneda.format(producto.precio * producto.cantidad)}</span>
                             </div>
                             <div class="carrito__item-cantidad">
                                 <button onclick="cambiarCantidad(${index}, ${producto.cantidad - 1})">-</button>

@@ -13,14 +13,12 @@ let fechaOrden = document.getElementById('fecha-orden');
 document.getElementById('nombre').textContent = usuario ? usuario.nombre : 'Invitado';
 document.getElementById('email').textContent = usuario ? usuario.email : 'No disponible';
 
-//tabla de orden
 orden.items.forEach(element => {
     const contenedorOrdern = document.getElementById('detalles-orden');
     idOrden.textContent = orden.id;
 
     const nuevaFecha = new Date(orden.fecha);
     fechaOrden.textContent = nuevaFecha.toLocaleDateString();
-    // fechaOrden.textContent = nuevaFecha.toISOString().split('T')[0];
     let trOrden = document.createElement('tr');
     trOrden.innerHTML = `
         <td>${element.nombre}</td>

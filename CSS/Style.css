@@ -15,6 +15,7 @@ body {
 
 .navbar {
   display: flex;
+  align-items: center;
   background: linear-gradient(to right, #701acc, #c37c12);
   box-shadow: 0 2px 8px #333;
 }
@@ -24,8 +25,9 @@ body {
   align-items: center;
   list-style: none;
   flex-wrap: nowrap;
-  margin-left: 37%;
-  padding-left: 0px;
+  margin-left: auto;
+  padding-right: 30px;
+  gap: 20px;
 }
 
 .navbar__item_registro, .navbar__item_carrito {
