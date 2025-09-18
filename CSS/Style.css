@@ -24,6 +24,8 @@ body {
   align-items: center;
   list-style: none;
   flex-wrap: nowrap;
+  margin-left: 37%;
+  padding-left: 0px;
 }
 
 .navbar__item_registro, .navbar__item_carrito {

@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="../CSS/Style.css"/>
   <link rel="stylesheet" href="../CSS/footer.css"/>
     <link rel="stylesheet" href="../CSS/pagos.css"/>
-
   <title>ClickNow</title>
 </head>
 <body>
@@ -15,16 +14,22 @@
     <nav class="navbar">
       <div class="navbar__logo">
         <a href="index.html" class="navbar__link" target="_inicio">
-          <img src="../assets/Imagenes/Logo/ClickNow.png" alt="Logo ClickNow" width="200" height="auto" style="margin-right: 830px;">
+          <img src="../assets/Imagenes/Logo/ClickNow.png" alt="Logo ClickNow" width="200" height="auto">
         </a>
       </div>
         <ul class="navbar__list">
-            <li class="navbar__item"><a href="../HTML/index.html" class="navbar__link" target="_inicio">Inicio</a></li>
-            <li class="navbar__item"><a href="../HTML/productos.html" class="navbar__link" target="_productos">Productos</a></li>
-            <li class="navbar__item"><a href="../HTML/contacto.html" class="navbar__link" target="_contacto">Contacto</a></li>
-            <li class="navbar__item_carrito"><a href="../HTML/carrito.html" class="navbar__link" target="_carrito">🛒</a></li>
-            <li class="navbar__item_registro"><a href="../HTML/registro.html" class="navbar__link" target="_registro">👥</a></li>
+            <li class="navbar__item"><a href="../HTML/index.html" class="navbar__link">Inicio</a></li>
+            <li class="navbar__item"><a href="../HTML/productos.html" class="navbar__link">Productos</a></li>
+            <li class="navbar__item_carrito"><a href="../HTML/carrito.html" class="navbar__link" target="_carrito">Carrito</a></li>
+            <li class="navbar__item"><a href="../HTML/contacto.html" class="navbar__link">Contacto</a></li>
+            <li id="registro"><a href="../HTML/registro.html" class="header__nav-link tooltip" data-tooltip="Registrarse">Registrarse</a></li>
+            <li id="login"><a href="../HTML/login.html" class="header__nav-link tooltip" data-tooltip="Login">Login</a></li>
+            <li id="admin"><a href="../HTML/admin.html" class="header__nav-link tooltip" data-tooltip="Admin">Admin</a></li>
+            <li id="cerrar-sesion"><a href="" class="header__nav-link tooltip" data-tooltip="Cerrar Sesión">Cerrar Sesión</a></li>
         </ul>
+            <button class="header__nav-toggle" aria-label="Abrir menu">
+            &#9776;
+            </button>
     </nav>
   </header>
 
