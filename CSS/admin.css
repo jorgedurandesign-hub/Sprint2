@@ -1,84 +1,83 @@
 .contenedor {
-    max-width: 80%;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .contenedor h2 {
-    text-align: center;
-    margin-bottom: 15px;
-    color:var(--color-primario);
-    border-bottom: 2px solid var(--color-secundario);
-    padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--color-primario);
+  border-bottom: 2px solid var(--color-secundario);
+  padding-bottom: 10px;
 }
 
 .contenedor p {
-    font-size: 18px;
-    margin: 8px 8px;
+  font-size: 18px;
+  margin: 8px 8px;
 }
 
 .contenedor table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .contenedor th,
 .contenedor td {
-    padding: 10px 15px;
+  padding: 10px 15px;
 }
 
 .contenedor th {
-    background: var(--color-primario);
-    color: white;
+  background: var(--color-primario);
+  color: white;
 }
 
 @media (max-width: 900px) {
-    .contenedor {
-        max-width: 98%;
-        padding: 10px;
-    }
-    .contenedor h2 {
-        font-size: 1.3rem;
-    }
-    .contenedor p {
-        font-size: 16px;
-    }
-    .contenedor table {
-        font-size: 15px;
-    }
+  .contenedor {
+    max-width: 98%;
+    padding: 10px;
+  }
+  .contenedor h2 {
+    font-size: 1.3rem;
+  }
+  .contenedor p {
+    font-size: 16px;
+  }
+  .contenedor table {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 600px) {
-    .contenedor {
-        max-width: 100%;
-        margin: 10px 0;
-        padding: 5px;
-        border-radius: 0;
-        box-shadow: none;
-    }
-    .contenedor h2 {
-        font-size: 1rem;
-        padding-bottom: 5px;
-    }
-    .contenedor p {
-        font-size: 14px;
-        margin: 4px 4px;
-    }
-    .contenedor table,
-    .contenedor th,
-    .contenedor td {
-        font-size: 13px;
-        padding: 6px 4px;
-    }
-    .contenedor table {
-        margin-top: 10px;
-    }
-    .contenedor th {
-        padding: 8px 4px;
-    }
+  .contenedor {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .contenedor h2 {
+    font-size: 1rem;
+    padding-bottom: 5px;
+  }
+  .contenedor p {
+    font-size: 14px;
+    margin: 4px 4px;
+  }
+  .contenedor table,
+  .contenedor th,
+  .contenedor td {
+    font-size: 13px;
+    padding: 6px 4px;
+  }
+  .contenedor table {
+    margin-top: 10px;
+  }
+  .contenedor th {
+    padding: 8px 4px;
+  }
 }
-
