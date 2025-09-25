@@ -74,7 +74,7 @@ border-color: var(--color-primario);
 outline: none;
 }
 
-.pagos__confirmacion {
+.pagos__confirmacion, .pagos__botones-inicio {
 display: none;
 text-align: center;
 padding: 10px 20px;
@@ -83,20 +83,7 @@ border-radius: 12px;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 margin-bottom: 20px;
 }
-.pagos__botones-inicio {
-background: var(--color-primario);
-color: #fff;
-min-width: 140px;
-padding: 12px 28px;
-font-size: 1.1rem;
-font-family: inherit;
-border-radius: 6px;
-border: none;
-cursor: pointer;
-transition: background 0.2s, transform 0.2s;
-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-margin-top: 20px;
-}
+
 .pagos__botones-inicio:hover {
 background: var(--color-secundario);
 transform: scale(1.05);
