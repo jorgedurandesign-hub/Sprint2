@@ -2,7 +2,7 @@
     max-width: 80%;
     margin: 40px auto;
     padding: 20px;
-    background: #f1e5ce;
+    background: white;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
@@ -10,8 +10,8 @@
 .contenedor h2 {
     text-align: center;
     margin-bottom: 15px;
-    color: #1e5484;
-    border-bottom: 2px solid #1e5484;
+    color:var(--color-primario);
+    border-bottom: 2px solid var(--color-secundario);
     padding-bottom: 10px;
 }
 
@@ -29,10 +29,10 @@
 .contenedor th,
 .contenedor td {
     padding: 10px 15px;
-    border: 1px solid #ddd;
 }
 
 .contenedor th {
-    background: #8faeca;
-    color: #fff;
+    background: var(--color-primario);
+    color: white;
 }
+

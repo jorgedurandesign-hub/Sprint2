@@ -26,7 +26,7 @@
                         window.location.href = 'admin.html';
                     }, 2000);
                 } else {
-                    mensajeDiv.style.color = '#c0392b';
+                    mensajeDiv.style.color = '#ffffffff';
                     mensajeDiv.textContent = 'Email o contraseña incorrectos. Inténtelo de nuevo.';
                 }
             })
