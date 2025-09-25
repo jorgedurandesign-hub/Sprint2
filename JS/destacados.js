@@ -9,7 +9,7 @@
             <p class="producto__precio">$${producto.precio}</p>
             <p class="producto__stock"> Stock: ${producto.stock} und.</p>
             <p class="producto__descripcion">${descripcionCorta}</p>
-            <button class="boton" ${producto.stock === 0 ? 'disabled' : ''} onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
+            <button class="${producto.stock === 0 ? 'boton productos_deshabilitado' : 'boton'}" ${producto.stock === 0 ? 'disabled' : ''} onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
         </div>
 
       `;

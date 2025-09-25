@@ -15,19 +15,21 @@ body {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   background: linear-gradient(to right, #701acc, #c37c12);
   box-shadow: 0 2px 8px #333;
+  padding: 1rem;
 }
 
 .navbar__list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   list-style: none;
-  flex-wrap: nowrap;
-  margin-left: auto;
-  padding-right: 30px;
-  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar__item_registro, .navbar__item_carrito {
@@ -96,8 +98,36 @@ body {
 
 @media (max-width: 600px) {
   .navbar__list {
+    display: none;
+    flex-direction: row-reverse;
+    background: var(--color-primario);
+    box-shadow: 0 2px 8px #000000;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 2rem;
+  }
+  .navbar__list.active {
+    display: flex;
+  }
+  .header__nav-toggle {
+    display: block;
+  }
+  .destacados__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .banner__content h1 {
+    font-size: 1.2rem;
+  }
+  .footer__content {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    gap: 1rem;
   }
 }
 
@@ -126,10 +156,9 @@ body {
 
 .header__nav-toggle{
     display: none;
-    font-size: 50px;
     background: none;
     border: none;
-    color: black;
+    font-size: 2rem;
     cursor: pointer;
 
 }
@@ -152,10 +181,13 @@ body {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        background-color: antiquewhite;
+        background-color: ;
         padding: 20px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         z-index: 1000;
+        color: ;
+        font-size: 10px;
+        text-align: center;
     }
 
     .header__nav-list.active {
@@ -175,12 +207,48 @@ body {
     bottom: 93%;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: var(--color-secundario);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    border: 1px solid var(--color-secundario);
     padding: 6px 8px;
     font-size: 1rem;
     white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
     transition: opacity 0.3s, ease 0.3s;
     z-index: 10;
+    visibility: hidden;
+}
+.tooltip:hover::after {
+    visibility: visible;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+/* Banner responsive */
+.banner__carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+.banner__imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.banner__content {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Productos destacados responsive */
+.destacados__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+@media (max-width: 1024px) {
+  .destacados__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

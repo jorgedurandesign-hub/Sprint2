@@ -36,3 +36,49 @@
     color: white;
 }
 
+@media (max-width: 900px) {
+    .contenedor {
+        max-width: 98%;
+        padding: 10px;
+    }
+    .contenedor h2 {
+        font-size: 1.3rem;
+    }
+    .contenedor p {
+        font-size: 16px;
+    }
+    .contenedor table {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 5px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .contenedor h2 {
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+    .contenedor p {
+        font-size: 14px;
+        margin: 4px 4px;
+    }
+    .contenedor table,
+    .contenedor th,
+    .contenedor td {
+        font-size: 13px;
+        padding: 6px 4px;
+    }
+    .contenedor table {
+        margin-top: 10px;
+    }
+    .contenedor th {
+        padding: 8px 4px;
+    }
+}
+

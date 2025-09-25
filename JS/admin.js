@@ -13,6 +13,12 @@ let fechaOrden = document.getElementById('fecha-orden');
 document.getElementById('nombre').textContent = usuario ? usuario.nombre : 'Invitado';
 document.getElementById('email').textContent = usuario ? usuario.email : 'No disponible';
 
+const formatoMoneda = new Intl.NumberFormat('es-CO', {
+    style: 'currency',
+    currency: 'COP',
+    minimumFractionDigits: 0
+});
+
 orden.items.forEach(element => {
     const contenedorOrdern = document.getElementById('detalles-orden');
     idOrden.textContent = orden.id;
@@ -23,7 +29,7 @@ orden.items.forEach(element => {
     trOrden.innerHTML = `
         <td>${element.nombre}</td>
         <td>${element.cantidad}</td>
-        <td>$${element.precio.toFixed(2)}</td>
+        <td>${formatoMoneda.format(element.precio)}</td>
     `;
     contenedorOrdern.appendChild(trOrden);
 });

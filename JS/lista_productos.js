@@ -10,7 +10,8 @@ function htmlProducto(producto, divProductos) {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0
       });
-      
+      console.log(producto.stock);
+
        return divProductos.innerHTML += `
         <div class="producto">
             <img src="${producto.imagen}" alt="${producto.nombre}" class="producto__imagen">
@@ -18,7 +19,7 @@ function htmlProducto(producto, divProductos) {
             <p class="producto__precio">${formatoMoneda.format(producto.precio)}</p>
             <p class="producto__stock"> Stock: ${producto.stock} und.</p>
             <p class="producto__descripcion">${descripcionCorta}</p>
-            <button class="boton" ${producto.stock === 0 ? 'disabled' : ''} onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
+            <button class="${producto.stock === 0 ? 'boton productos_deshabilitado' : 'boton'}" ${producto.stock === 0 ? 'disabled' : ''} onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
         </div>
         `
 }

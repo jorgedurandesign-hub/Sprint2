@@ -4,7 +4,14 @@ let itemsCarrito = document.querySelector(".carrito__productos");
             let total = document.getElementById("total");
             let btonPagos = document.getElementById("boton_carrito__pagar");
             let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
             
+            const formatoMoneda = new Intl.NumberFormat('es-CO', {
+                style: 'currency', 
+                currency: 'COP',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            });
             function mostrarCarrito() {
                 console.log('   carrito:', carrito);
                 let suma = 0;
@@ -12,12 +19,7 @@ let itemsCarrito = document.querySelector(".carrito__productos");
                 carrito.forEach((producto, index) => {
                     suma += producto.precio * producto.cantidad;
 
-            const formatoMoneda = new Intl.NumberFormat('es-CO', {
-                style: 'currency', 
-                currency: 'COP',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            });
+            
 
                     return itemsCarrito.innerHTML += `
                         <div class="carrito__item">
@@ -37,9 +39,9 @@ let itemsCarrito = document.querySelector(".carrito__productos");
                     `;
                 });
 
-                subtotal.textContent = `$${suma.toFixed(2)}`;
-                iva.textContent = `$${(suma * 0.19).toFixed(2)}`;
-                total.textContent = `$${(suma * 1.19).toFixed(2)}`;
+                subtotal.textContent = `${formatoMoneda.format(suma)}`;
+                iva.textContent = `${formatoMoneda.format(suma * 0.19)}`;
+                total.textContent = `${formatoMoneda.format(suma * 1.19)}`;
                 localStorage.setItem("totales", JSON.stringify({subtotal: suma, iva: suma * 0.19, total: suma * 1.19}));
             }
 
@@ -72,7 +74,15 @@ let itemsCarrito = document.querySelector(".carrito__productos");
                         mensajeEliminar.textContent = "Producto eliminado del carrito.";
                         mensajeEliminar.style.display = "block";
                         localStorage.setItem("carrito", JSON.stringify(carrito));
-                        mostrarCarrito();
+                    if (carrito.length === 0) {
+                itemsCarrito.innerHTML = "<p>Tu carrito está vacío.</p>";
+                btonPagos.disabled = true;
+                btonPagos.classList.remove("carrito_pagar_habilitado");
+                btonPagos.classList.add("carrito_pagar_deshabilitado");
+            } else {
+                mostrarCarrito();
+            }
+
                         setTimeout(() => {
                             mensajeEliminar.style.display = "none";
                         }, 8000);

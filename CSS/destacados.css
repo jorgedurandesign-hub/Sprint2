@@ -77,3 +77,7 @@ opacity: 1;
 }
 
 }
+
+.productos_deshabilitado,.productos_deshabilitado:hover {
+background-color: grey;
+}

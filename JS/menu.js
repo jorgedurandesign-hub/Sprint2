@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
                 
     const menuResponsive = document.querySelector('.header__nav-toggle');
-    const navList = document.querySelector('.header__nav-list');
+    const navList = document.querySelector('.navbar__list');
 
     const cerrarSesion = document.getElementById('cerrar-sesion');
     const login = document.getElementById('login');
@@ -31,3 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'index.html';
     });
 });
+
