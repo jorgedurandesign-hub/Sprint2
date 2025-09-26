@@ -34,7 +34,7 @@
   </header>
 
 <section class="pagos">
-    <div class="pagos__formulario">
+    <div class="pagos__formulario" id="pagos__formulario">
         <h2>INFORMACIÓN DE PAGOS</h2>
         <form>
             <div>
@@ -56,15 +56,15 @@
             <div  class="pagos__botones">
                 <button type="submit" id="pagos__boton">Pagar</button>
                 <button type="button" onclick="window.location.href = '../HTML/carrito.html'">Volver al Carrito</button>
-
+            </div>
         </form>
-
-        <div class="pagos__confirmacion" id="pagos__confirmacion">
-                <h2>¡Gracias por tu compra!</h2>
-                <p>Tu pago ha sido realizado con éxito.</p>
-                <p id="pago__orden"></p>
-                <button class="pagos__botones-inicio" type="button" onclick="window.location.href='index.html'">Volver al inicio</button>
-        </div>
+      </div>
+      <div class="pagos__confirmacion" id="pagos__confirmacion">
+              <h2>¡Gracias por tu compra!</h2>
+              <p>Tu pago ha sido realizado con éxito.</p>
+              <p id="pago__orden"></p>
+              <button class="pagos__botones-inicio" type="button" onclick="window.location.href='index.html'">Volver al inicio</button>
+      </div>
 </section>
 
   <footer class="footer">

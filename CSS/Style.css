@@ -220,7 +220,6 @@ body {
   opacity: 1;
 }
 
-/* Banner responsive */
 .banner__carousel {
   display: flex;
   overflow-x: auto;
@@ -236,7 +235,6 @@ body {
   margin-top: 1rem;
 }
 
-/* Productos destacados responsive */
 .destacados__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
