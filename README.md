@@ -7,8 +7,7 @@
 ## Desarrollo y tecnologías utilizadas
 
 El proyecto fue desarrollado utilizando:
-
-![alt text](image-1.png)
+![alt text](image.png)
 - **HTML5**: Estructura de las páginas y componentes.
 - **CSS3**: Estilos, diseño responsivo y personalización visual.
 - **JavaScript**: Lógica de interacción, gestión de datos en localStorage, validaciones y funcionalidades dinámicas.
@@ -17,8 +16,7 @@ El proyecto fue desarrollado utilizando:
 
 
 ## Funciones de cada archivo HTML
-
-![alt text](image.png)
+![alt text](image-1.png)
 - **index.html**: Página principal, muestra el banner, productos destacados y navegación.
 - **carrito.html**: Visualización y gestión del carrito de compras, permite modificar cantidades y eliminar productos.
 - **registro.html**: Formulario para registro de nuevos usuarios.
